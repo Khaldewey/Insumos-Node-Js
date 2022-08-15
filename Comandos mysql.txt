@@ -1,0 +1,40 @@
+mysql -h localhost -u root -p    : comando para colocar no prompt
+npm install --save express  : instala o express
+npm instal --save sequelize  : instala o sequelize
+npm install --save mysql2  : instala o mysql2
+npm install --save express-handlebars : esse instala o handlebars que está relacionado ao Dom
+npm install --save body-parser : instala o body-parser
+
+Obs: tudo acima deve ser instalado para o objetivo ser alcançado
+
+CREATE DATABASE ttt;     : cria um banco de dados
+SHOW DATABASES;          : ver banco de dados criados 
+USE ttt;                 : usa banco de dados 
+
+
+CREATE TABLE yyy(
+nome VARCHAR(50),
+email VARCHAR(100),       : Cria tabela para banco de dados usado 
+idade INT
+); 
+
+
+DESCRIBE yyy;              : visualiza estrutura da tabela 
+
+INSERT INTO yyy(nome,email,idade) VALUES(
+"teste",
+"teste",                                   : insere dados na tabela
+6
+); 
+
+
+SELECT *FROM yyy;              : ver todos os dados da tabela sem nenhuma condição 
+
+SELECT *FROM yyy WHERE idade >= 18;              : ver todos os dados da tabela com uma condição 
+
+DELETE FROM yyy;            : esse aqui exclui a tabela inteira portanto cuidado ao usar esse comando 
+
+DELETE FROM yyy WHERE nome = "teste";       : esse aqui exclui todos os registros que tenham o nome = "teste 
+
+UPDATE yyy SET nome = "Nome de teste" WHERE nome = "teste;   : esse aqui atualiza um dado específico de acordo com condição 
+
